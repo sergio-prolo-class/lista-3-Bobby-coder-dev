@@ -34,36 +34,34 @@ Este projeto simula um sistema de atendimento para uma empresa, organizando clie
 classDiagram
 direction LR
     class FilaAtendimento {
-	    - solicitacoes: Queue
-	    - clientes: Map
-	    - atendidas: List
-	    + registrarSolicitacao()
-	    + listarTelefones()
-	    + proximoCliente()
-	    + atenderSolicitacao()
-	    + listarAtendidos()
-	    + listarTelefonesEmEspera()
-	    + gerarRelatorio()
+        - solicitacoes: Queue
+        - clientes: Map
+        - atendidas: List
+        + registrarSolicitacao()
+        + listarTelefones()
+        + proximoCliente()
+        + atenderSolicitacao()
+        + listarAtendidos()
+        + listarTelefonesEmEspera()
+        + gerarRelatorio()
     }
 
     class Solicitacao {
-	    - cliente: Cliente
-	    - descricao: String
-	    - categoria: String
-	    + getCliente()
-	    + getDescricao()
-	    + getCategoria()
+        - cliente: Cliente
+        - descricao: String
+        - categoria: String
+        + getCliente()
+        + getDescricao()
+        + getCategoria()
     }
 
     class Cliente {
-	    - nome: String
-	    - telefone: String
-	    + getNome()
-	    + getTelefone()
+        - nome: String
+        - telefone: String
+        + getNome()
+        + getTelefone()
     }
 
     FilaAtendimento "1" o-- "*" Solicitacao
     Solicitacao "1" --> "1" Cliente
-
-
-...
+    ...
