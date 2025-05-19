@@ -28,8 +28,7 @@ Este projeto simula um sistema de atendimento para uma empresa, organizando clie
    ```bash
    ./gradlew run
 
-## Diagrama UML
-
+### Diagrama em Mermaid (código)
 ```mermaid
 classDiagram
     class FilaAtendimento {
@@ -63,5 +62,7 @@ classDiagram
 
     FilaAtendimento o-- Solicitacao : gerencia
     Solicitacao --> Cliente : refere-se
-    EOF
-    ...
+```
+
+### Visualização
+![Diagrama UML](docs/diagrama-uml.png)
