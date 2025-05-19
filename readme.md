@@ -18,7 +18,7 @@ Este projeto simula um sistema de atendimento para uma empresa, organizando clie
 
 - Estruturas utilizadas: `Queue`, `HashMap`, `ArrayList`, `LinkedList`, `Scanner`
 
-## ▶️ Como Executar
+## Como Executar
 
 1. coloque no bloco application de build.gradle -> mainClass = 'ifsc.poo.atendimento.Main'
 2. execute a build projeto com gradle
