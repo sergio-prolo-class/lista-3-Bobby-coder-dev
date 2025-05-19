@@ -5,8 +5,7 @@ public class Main {
     public static void main(String[] args) {
         FilaAtendimento fila = new FilaAtendimento();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bem-vindo a Fila de atendimento!");
-        System.out.println("Escolha uma opção: \n1 - Registrar Solicitação \n2 - Todos os telefones \n" +
+        System.out.println("Escolha uma opção: \n1 - Registrar Solicitação \n2 - Listar telefones \n" +
                 "3 - Proximo Cliente \n4 - Atender Cliente \n5 - Clientes Atendidos \n6 - Telefones em espera \n7 - Relátorio \n8 - Sair");
         int opcao = sc.nextInt();
         sc.nextLine();
@@ -42,7 +41,7 @@ public class Main {
                     }
 
                     fila.registrarSolicitacao(nome, numeroTelefone, descricao, categoria);
-                    System.out.println("Cliente registrado com sucesso!");
+                    System.out.println("Cliente registrado com sucesso");
                     break;
                 case 2:
                     System.out.println("Telefones cadastrados:");
@@ -57,7 +56,7 @@ public class Main {
 
                 case 4:
                     fila.AtenderSolicitacao();
-                    System.out.println("Cliente atendido!");
+                    System.out.println("Cliente atendido");
                     break;
 
                 case 5:
@@ -79,14 +78,14 @@ public class Main {
                     break;
 
                 case 8:
-                    System.out.println("Encerrando...");
+                    System.out.println("Encerrando");
                     return;
 
                 default:
-                    System.out.println("Opção inválida!");
+                    System.out.println("Opção inválida");
                     break;
             }
-            System.out.println("Escolha uma opção: \n1 - Registrar Solicitação \n2 - Todos os telefones \n" +
+            System.out.println("Escolha uma opção: \n1 - Registrar Solicitação \n2 - Listar telefones \n" +
                     "3 - Proximo Cliente \n4 - Atender Cliente \n5 - Clientes Atendidos \n6 - Telefones em espera \n7 - Relátorio \n8 - Sair");
             opcao = sc.nextInt();
             sc.nextLine();
