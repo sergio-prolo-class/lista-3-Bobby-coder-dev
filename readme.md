@@ -60,4 +60,8 @@ classDiagram
         + getNome()
         + getTelefone()
     }
+
+    FilaAtendimento o-- Solicitacao : gerencia
+    Solicitacao --> Cliente : refere-se
+    EOF
     ...
