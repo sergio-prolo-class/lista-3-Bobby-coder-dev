@@ -35,12 +35,6 @@ application {
     mainClass = 'ifsc.poo.login.LoginApp'
 }
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'ifsc.poo.App'
-    }
-}
-
 run {
     standardInput = System.in
 }
