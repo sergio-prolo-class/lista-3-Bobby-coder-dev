@@ -32,7 +32,6 @@ Este projeto simula um sistema de atendimento para uma empresa, organizando clie
 
 ```mermaid
 classDiagram
-direction LR
     class FilaAtendimento {
         - solicitacoes: Queue
         - clientes: Map
@@ -62,6 +61,6 @@ direction LR
         + getTelefone()
     }
 
-    FilaAtendimento "1" o-- "*" Solicitacao
-    Solicitacao "1" --> "1" Cliente
+    FilaAtendimento o-- Solicitacao : gerencia
+    Solicitacao --> Cliente : refere-se
     ...
