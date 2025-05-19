@@ -30,9 +30,13 @@ java {
     }
 }
 
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
 application {
     // Define the main class for the application.
-    mainClass = 'ifsc.poo.login.LoginApp'
+    mainClass = 'ifsc.poo.login.Main'
 }
 
 run {
