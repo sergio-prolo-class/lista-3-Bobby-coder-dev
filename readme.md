@@ -238,7 +238,7 @@ direction LR
 	    + getData()
     }
 
-    Main ..> Biblioteca : usa
+    Main ..> Biblioteca
     Biblioteca "1" o-- "*" Autor
     Biblioteca "1" o-- "*" Leitor
     Biblioteca "1" *-- "*" Livro
