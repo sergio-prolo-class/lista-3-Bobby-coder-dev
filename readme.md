@@ -34,6 +34,7 @@ remover, listar e autenticar logins. Tudo com o uso de estruturas
 ```mermaid
     classDiagram
     class GerenciadorLogin {
+	-Usuarios: Map
         +cadastrar(login, senha): boolean
         +remover(login): boolean
         +listar(): List~String~
