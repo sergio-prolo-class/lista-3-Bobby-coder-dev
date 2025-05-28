@@ -30,15 +30,13 @@ java {
     }
 }
 
-application {
-    // Define the main class for the application.
-    mainClass = 'ifsc.poo.App'
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'ifsc.poo.App'
-    }
+application {
+    // Define the main class for the application.
+    mainClass = 'ifsc.poo.login.Main'
 }
 
 run {
