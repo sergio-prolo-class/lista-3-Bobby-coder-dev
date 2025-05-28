@@ -18,10 +18,6 @@ public class Biblioteca {
         if(!autores.contains(autor)) { autores.add(autor); }
     }
 
-    public List<Autor> getAutores() {
-        return autores;
-    }
-
     public void cadastraLeitor(String nome, String endereco, String telefone){
         Leitor leitor = new Leitor(nome, endereco, telefone, id);
         if(!leitores.contains(leitor)) {
@@ -133,14 +129,16 @@ public class Biblioteca {
             }
         }
 
-
-
         emprestimosDoLeitor.sort(Comparator.comparing(Emprestimo::getData));
 
         System.out.println("Leitor: " + nome);
         for (Emprestimo e : emprestimosDoLeitor) {
             System.out.println("Data: " + e.getData() + " | Livro: " + e.getLivro().getTitulo());
         }
+    }
+
+    public List<Autor> getAutores() {
+        return autores;
     }
 
 }

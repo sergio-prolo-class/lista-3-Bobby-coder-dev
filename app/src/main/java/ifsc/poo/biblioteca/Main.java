@@ -39,7 +39,7 @@ public class Main {
                     int quantidade = sc.nextInt();
                     sc.nextLine();
                     List<Autor> autoresLivro = new ArrayList<>();
-                    System.out.println("Informe os nomes dos autores (digite vazio para encerrar):");
+                    System.out.println("Informe os nomes dos autores: (vazio para encerrar)");
                     while (true) {
                         System.out.print("Autor: ");
                         String nomeAutor = sc.nextLine();

@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Leitor {
-    private String nome;
-    private String endereco;
-    private String telefone;
+    private final String nome;
+    private final String endereco;
+    private final String telefone;
     private List<Livro> LivrosEmprestados = new ArrayList<>();
-    private int id;
+    private final int id;
 
     public Leitor(String nome, String endereco, String telefone, int id){
         this.nome = nome;

@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/DaO0-MBc)
 
-# Gerenciador de Login 
+# Gerenciador de Login
 Este projeto é uma aplicação Java de linha de comando para gerenciamento simples de usuários, permitindo cadastrar,
 remover, listar e autenticar logins. Tudo com o uso de estruturas
 
@@ -34,6 +34,7 @@ remover, listar e autenticar logins. Tudo com o uso de estruturas
 ```mermaid
     classDiagram
     class GerenciadorLogin {
+	-Usuarios: Map
         +cadastrar(login, senha): boolean
         +remover(login): boolean
         +listar(): List~String~
@@ -55,21 +56,21 @@ Este projeto simula um sistema de atendimento para uma empresa, organizando clie
 ## Funcionalidades
 
 - **Registrar Solicitação**
- Registrar solicitações vinculadas a um cliente.
+  Registrar solicitações vinculadas a um cliente.
 - **Listar Telefones**
-Listar todos os telefones de clientes registrados.
+  Listar todos os telefones de clientes registrados.
 - **Próximo Cliente**
- Ver o próximo cliente da fila.
+  Ver o próximo cliente da fila.
 - **Atender CLiente**
- Atender clientes (remover da fila).
+  Atender clientes (remover da fila).
 - **Clientes Atendidos**
-Listar nomes dos clientes atendidos.
+  Listar nomes dos clientes atendidos.
 - **Telefones em espera**
-Listar telefones dos clientes ainda em espera.
+  Listar telefones dos clientes ainda em espera.
 - **Relatório**
-Gerar um relatório estatístico completo.
+  Gerar um relatório estatístico completo.
 - **Sair**
- Encerra o programa.
+  Encerra o programa.
 
 ## Esturturas de dados usadas
 
@@ -132,7 +133,7 @@ direction LR
 
 # Biblioteca
 
-Este projeto é uma aplicação de linha de comando para gerenciamento de uma 
+Este projeto é uma aplicação de linha de comando para gerenciamento de uma
 biblioteca, desenvolvida em Java. Permite cadastrar autores, leitores
 (com ID único), livros (com múltiplos autores e cópias), e registrar empréstimos.
 Também possibilita listar livro, autores e leitores por determinados critérios.
@@ -238,7 +239,7 @@ direction LR
 	    + getData()
     }
 
-    Main ..> Biblioteca : usa
+    Main ..> Biblioteca
     Biblioteca "1" o-- "*" Autor
     Biblioteca "1" o-- "*" Leitor
     Biblioteca "1" *-- "*" Livro
